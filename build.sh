@@ -9,10 +9,10 @@
 
 main() {
 
-  DART_SASS_VERSION=1.97.1
-  GO_VERSION=1.25.5
-  HUGO_VERSION=0.153.3
-  NODE_VERSION=24.12.0
+  DART_SASS_VERSION=1.97.3
+  GO_VERSION=1.26.0
+  HUGO_VERSION=0.155.3
+  NODE_VERSION=24.13.1
 
   export TZ=Europe/Oslo
 
@@ -61,7 +61,7 @@ main() {
 
   # Build the site
   echo "Building the site"
-  hugo --gc --minify --baseURL "https://${VERCEL_PROJECT_PRODUCTION_URL}"
+  hugo build --gc --minify --baseURL "https://${VERCEL_PROJECT_PRODUCTION_URL}"
 
 }
 
